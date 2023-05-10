@@ -269,87 +269,7 @@ About
 }
 /*
 
-/*
-=============== 
-Featured Tours
-===============
-*/
 
-.tour-card {
-  transition: var(--transition);
-  background: var(--clr-grey-10);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-}
-.tour-card:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  transform: scale(1.02);
-}
-.tour-img-container {
-  position: relative;
-}
-.tour-img {
-  height: 15rem;
-  object-fit: cover;
-}
-.tour-date {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background: var(--clr-primary-8);
-  color: var(--clr-primary-1);
-  text-transform: capitalize;
-  padding: 0.25rem 0.5rem;
-  margin-bottom: 0;
-}
-.tour-info {
-  padding: 1.25rem 1.5rem;
-}
-/* additional css for different layout*/
-.tour-title {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.tour-title p,
-.tour-title h4 {
-  margin-bottom: 0.75rem;
-  line-height: 1.25;
-}
-.tour-title p {
-  color: var(--clr-grey-7);
-}
-/* end of additional css for different layout*/
-.tour-footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.tour-footer p {
-  line-height: 0;
-  margin-bottom: 0;
-  text-transform: capitalize;
-  color: var(--clr-primary-5);
-}
-.tour-btn {
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .featured-center {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .tour-card {
-    flex: 0 0 calc(50% - 2rem);
-  }
-}
-@media screen and (min-width: 1170px) {
-  .tour-card {
-    flex: 0 0 calc(33.3333% - 2rem);
-  }
-}
 /*
 =============== 
 Contact
@@ -696,4 +616,30 @@ Services
   content: "";
   clear: both;
   display: table;
+}
+
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+.section-title2 h3 {
+  font-family: var(--ff-secondary);
+  color: var(--clr-primary);
+}
+.section-title2 {
+  margin-bottom: 2rem;
+}
+.section-center2 {
+  padding: 4rem 0;
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center2 {
+    width: 95vw;
+    padding: 4rem 1rem;
+  }
 }
