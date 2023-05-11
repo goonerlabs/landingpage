@@ -178,7 +178,9 @@ Hero
 
 .hero {
   min-height: 100vh;
-  background: var(--clr-primary-5);
+  /* background: var(--clr-primary-5); */
+  background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../images/main.jpeg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,15 +212,20 @@ Hero
   border-color: var(--clr-white);
 }
 @media screen and (min-width: 768px) {
-  .hero {
+  /* .hero {
     background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
       url("../images/main.jpeg") center/cover no-repeat;
-  }
+  } */
   .hero-banner {
     padding: 0;
   }
   .hero-banner p {
     max-width: 45rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  .hero-btn {
+    margin-top: 2rem;
   }
 }
 /*
@@ -383,6 +390,11 @@ Navbar
 */
 /* add :not(.nav-logo) to img */
 
+.nav-logo {
+  width: 125px;
+  height: 55px;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -404,7 +416,7 @@ Navbar
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 .nav-toggle {
   background: transparent;
@@ -440,7 +452,7 @@ Navbar
   transition: var(--transition);
 }
 .show-links {
-  height: 280px;
+  height: 100px;
 }
 /* nav at bigger screen size */
 @media screen and (min-width: 992px) {
@@ -475,10 +487,10 @@ Navbar
     display: flex;
   }
   .navbar {
-    padding: 1rem 2rem;
+    padding: 0.75rem 0.75rem;
   }
   .nav-link {
-    margin-right: 0.7rem;
+    margin-right: 1rem;
   }
   .nav-icon {
     margin-right: 0.7rem;
@@ -501,15 +513,18 @@ Skills
 
 .skills {
   background: var(--clr-grey-10);
+  display: flex;
+  justify-content: space-between;
+  /* height: 100px; */
 }
 .skill {
-  padding: 2.5rem 0;
+  padding: 2rem 0;
   text-align: center;
   transition: var(--transition);
 }
 .skill-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1.25rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
   transition: var(--transition);
   display: inline-block;
   color: var(--clr-primary-5);
@@ -534,7 +549,7 @@ Skills
 }
 @media screen and (min-width: 1200px) {
   .skill {
-    width: 25%;
+    width: 50%;
   }
 }
 /*
@@ -604,8 +619,8 @@ Services
   left: 50%;
   bottom: 0;
   font-size: 2rem;
-  color: var(--clr-primary);
-  background: var(--clr-primary-light);
+  color: var(--clr-primary-1);
+  background: var(--clr-primary-8);
   padding: 0.25rem 0.6rem;
   border-radius: 50%;
   transform: translate(-50%, 50%);
@@ -618,21 +633,15 @@ Services
   display: table;
 }
 
-.clearfix::after,
-.clearfix::before {
-  content: "";
-  clear: both;
-  display: table;
-}
 .section-title2 h3 {
   font-family: var(--ff-secondary);
   color: var(--clr-primary);
 }
 .section-title2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .section-center2 {
-  padding: 4rem 0;
+  padding: 1rem 0;
   width: 85vw;
   margin: 0 auto;
   max-width: 1170px;
@@ -640,6 +649,6 @@ Services
 @media screen and (min-width: 992px) {
   .section-center2 {
     width: 95vw;
-    padding: 4rem 1rem;
+    padding: 1rem 1rem;
   }
 }
