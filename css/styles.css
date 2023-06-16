@@ -78,7 +78,6 @@ img:not(.nav-logo) {
   display: block;
 } */
 h1,
-h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
@@ -353,6 +352,7 @@ Footer
   text-align: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  text-transform: capitalize;
 }
 .footer-links,
 .footer-icons {
@@ -654,4 +654,75 @@ Services
     width: 95vw;
     padding: 1rem 1rem;
   }
+}
+/*terms*/
+
+.terms-info {
+  padding: 2rem 0;
+}
+
+.terms-text {
+  max-width: 26rem;
+  color: var(--clr-grey-1);
+}
+.terms{
+  background: var(--clr-grey-1);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: var(--clr-white);
+}
+.terms p{
+  color: var(--clr-grey-9);
+}
+.terms h4{
+  font-weight: bolder;
+  letter-spacing: normal;
+  font-size: larger;
+}
+.terms-info {
+  padding: 2rem;
+}
+/*privacy*/
+.privacy-text {
+  max-width: 26rem;
+  color: var(--clr-grey-1);
+}
+.privacy{
+  background: var(--clr-grey-1);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: var(--clr-white);
+}
+.privacy p{
+  color: var(--clr-grey-9);
+}
+.privacy h4{
+  font-weight: bolder;
+  letter-spacing: normal;
+  font-size: larger;
+}
+.privacy-info {
+  padding: 2rem;
+}
+/*cookies*/
+.cookies-text {
+  max-width: 26rem;
+  color: var(--clr-grey-1);
+}
+.cookies{
+  background: var(--clr-grey-1);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: var(--clr-white);
+}
+.cookies p{
+  color: var(--clr-grey-9);
+}
+.cookies h4{
+  font-weight: bolder;
+  letter-spacing: normal;
+  font-size: larger;
+}
+.cookies-info {
+  padding: 2rem;
 }
